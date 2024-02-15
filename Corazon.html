@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>San Valentín</title>
+  <style>
+    body {
+      background-image: url('img/san\ valentin1.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: white;
+      overflow: hidden; /* Evita que las imágenes desborden la pantalla */
+    }
+
+    h1 {
+      color: #00e613;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .heart-container {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .heart, .flower {
+      font-size: 3rem;
+      margin: 0 5px;
+      animation: floating 2s ease-in-out infinite;
+    }
+
+    @keyframes floating {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .heart {
+      color: #e6005c;
+    }
+
+    .flower {
+      color: #ffcc00;
+    }
+
+    @keyframes heartbeat {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .floating-heart {
+      animation: heartbeat 1s infinite;
+    }
+
+    .photo {
+      position: absolute;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .photo1 {
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);
+    }
+
+    .photo2 {
+      top: 0;
+      right: 0;
+      transform: translate(0, 0);
+    }
+
+    .photo3 {
+      bottom: 0;
+      left: 0;
+      transform: translate(0, 0);
+    }
+
+    .photo4 {
+      bottom: 0;
+      right: 0;
+      transform: translate(0, 0);
+    }
+  </style>
+</head>
+<body>
+  <h1>Feliz Día de San Valentín</h1>
+  <p>En este día tan especial, quiero decirte cuánto significas para mí.</p>
+  <p>Eres mi razón para sonreír y mi corazón late más fuerte cuando estás cerca.</p>
+  <p>Nose si estamos hechos el uno para el otro</p>
+  <p>si hemos llegado hasta aquí es porque seguimos eligiéndonos cada día</p>
+  <p>y eso es como estar hecho el uno para el otro.</p>
+  <p>Que me perdone el tiempo... por querer detenerlo cuando te miro.</p>
+
+  <div class="heart-container">
+    <span class="heart floating floating-heart">❤️</span>
+    <span class="flower floating">🌸</span>
+    <span class="heart floating">❤️</span>
+    <span class="flower floating">🌼</span>
+    <span class="heart floating floating-heart">❤️</span>
+  </div>
+  <img class="photo photo1" src="img/imagen1.jpg" alt="Foto 1">
+  <img class="photo photo2" src="img/imagen2.jpg" alt="Foto 2">
+  <img class="photo photo3" src="img/imagen3.jpg" alt="Foto 3">
+  <img class="photo photo4" src="img/imagen4.jpg" alt="Foto 4">
+  
+</body>
+</html>
+
+
+
